@@ -68,31 +68,38 @@
                     android:layout_width="3dp"
                     android:layout_height="wrap_content"
                     android:layout_alignTop="@id/toolbar"
+
                     android:layout_alignBottom="@id/toolbar"
                     android:layout_alignParentRight="true"
                     android:background="@color/app_color" />
 
-                <RelativeLayout
+                <LinearLayout
                     android:id="@+id/toolbar"
                     android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/top_toolbar" />
+
+
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content">
+
 
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
-                        android:orientation="horizontal">
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
 
-                        <ImageView
-                            android:layout_width="wrap_content"
-
-                            android:layout_height="wrap_content"
-                            android:layout_margin="@dimen/_10cdp"
-                            android:layout_marginRight="@dimen/_10cdp"
-                            android:src="@drawable/favorites_icon"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintRight_toLeftOf="@+id/drawable_icon"
-                            app:layout_constraintTop_toTopOf="parent" />
 
                         <ImageView
                             android:id="@+id/shopping_icon"
@@ -118,29 +125,71 @@
                             app:layout_constraintTop_toTopOf="parent" />
                     </LinearLayout>
 
-
-                    <ImageView
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerInParent="true"
-                        android:layout_margin="@dimen/_10cdp"
-                        android:src="@drawable/logo" />
+                        android:weightSum="1"
 
 
-                    <ImageView
-                        android:id="@+id/drawable_icon"
+                        >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_10cdp"
+                            android:src="@drawable/logo"
+
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentRight="true"
-                        android:layout_centerVertical="true"
-                        android:layout_margin="@dimen/_10cdp"
-                        android:src="@drawable/drawable_icon" />
+                        android:layout_centerInParent="true"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_10cdp"
+                            android:layout_marginRight="@dimen/_10cdp"
+                            android:src="@drawable/favorites_icon"
+
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintRight_toLeftOf="@+id/drawable_icon"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+
+                            android:id="@+id/drawable_icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/_10cdp"
+                            android:layout_marginTop="@dimen/_10cdp"
+                            android:layout_marginEnd="@dimen/_10cdp"
+                            android:layout_marginBottom="@dimen/_10cdp"
+                            android:src="@drawable/drawable_icon" />
 
 
+                    </LinearLayout>
                 </RelativeLayout>
-
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_marginLeft="@dimen/_10cdp"
+                        android:layout_marginRight="@dimen/_10cdp"
+                        android:background="@color/divider" />
+                </LinearLayout>
             </RelativeLayout>
         </com.google.android.material.appbar.AppBarLayout>
+
+
 
 
         <androidx.core.widget.NestedScrollView
@@ -148,19 +197,101 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:fillViewport="true"
+            android:paddingBottom="55dp"
             app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
             app:layout_constraintBottom_toTopOf="@id/bottom_nav"
             app:layout_constraintTop_toBottomOf="@id/toolbar">
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/_10cdp"
-                android:text="n publishing ann publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonst rate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.d graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available."
-                app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
-                app:layout_constraintBottom_toBottomOf="@id/nsv"
-                app:layout_constraintTop_toTopOf="@id/nsv" />
 
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <View
+                android:layout_width="3dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/li"
+                android:layout_alignParentLeft="true"
+                android:layout_alignTop="@id/li"
+                android:background="@color/app_color"
+                />
+
+            <View
+                android:layout_width="3dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/li"
+                android:layout_alignBottom="@id/li"
+                android:layout_alignParentRight="true"
+                android:background="@color/app_color"
+                />
+
+                <LinearLayout
+                    android:id="@+id/li"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <!--<RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:layout_marginLeft="@dimen/_10cdp"
+                            android:layout_marginRight="@dimen/_10cdp"
+                            android:background="@color/divider" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="35dp"
+                            android:layout_marginTop="@dimen/_10cdp"
+                            android:layout_marginBottom="@dimen/_10cdp"
+                            android:src="@drawable/sort" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="@dimen/_10cdp"
+                            android:layout_marginBottom="@dimen/_10cdp"
+                            android:src="@drawable/filter" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="@dimen/_10cdp"
+                            android:layout_marginRight="35dp"
+                            android:layout_marginBottom="@dimen/_10cdp"
+                            android:src="@drawable/partition" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginLeft="@dimen/_10cdp"
+                            android:layout_marginRight="@dimen/_10cdp"
+                            android:background="@color/divider" />
+
+                    </RelativeLayout>
+-->
+                    <TextView
+                        android:id="@+id/txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginStart="@dimen/_10cdp"
+                        android:layout_marginEnd="@dimen/_10cdp"
+
+                        android:text="n publishing ann publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonst rate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.d graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available."
+                        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior" />
+                </LinearLayout>
+
+            </RelativeLayout>
 
         </androidx.core.widget.NestedScrollView>
 
@@ -173,7 +304,7 @@
         android:layout_height="wrap_content"
         android:background="@drawable/fab_bg"
         android:orientation="vertical"
-        android:visibility="visible"
+        android:visibility="gone"
 
         app:layout_constraintBottom_toBottomOf="@id/fab"
         app:layout_constraintLeft_toLeftOf="@id/fab"
