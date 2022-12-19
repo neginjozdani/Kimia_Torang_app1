@@ -14,7 +14,7 @@
         android:src="@drawable/ic_user_account1"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/enteruser"
@@ -62,7 +62,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_username" />
+        app:layout_constraintTop_toBottomOf="@+id/text_username"
+        tools:ignore="TextContrastCheck,TextContrastCheck" />
 
     <TextView
         android:id="@+id/text_pass"
@@ -92,7 +93,7 @@
         android:background="#42A2ED"
         android:text="**********"
         android:textAlignment="center"
-        android:textColor="#F1F0F0"
+        android:textColor="#0D47A1"
         android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -163,7 +164,6 @@
         android:paddingTop="10dp"
         android:src="@drawable/group49"
         app:layout_constraintLeft_toLeftOf="parent"
-
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
