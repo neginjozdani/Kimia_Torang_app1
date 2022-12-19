@@ -83,6 +83,16 @@
                         android:layout_centerVertical="true"
                         android:orientation="horizontal">
 
+                        <ImageView
+                            android:layout_width="wrap_content"
+
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_10cdp"
+                            android:layout_marginRight="@dimen/_10cdp"
+                            android:src="@drawable/favorites_icon"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintRight_toLeftOf="@+id/drawable_icon"
+                            app:layout_constraintTop_toTopOf="parent" />
 
                         <ImageView
                             android:id="@+id/shopping_icon"
@@ -113,10 +123,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerInParent="true"
-                        android:layout_marginStart="@dimen/_10cdp"
-                        android:layout_marginTop="@dimen/_10cdp"
-                        android:layout_marginEnd="@dimen/_10cdp"
-                        android:layout_marginBottom="@dimen/_10cdp"
+                        android:layout_margin="@dimen/_10cdp"
                         android:src="@drawable/logo" />
 
 
@@ -126,20 +133,8 @@
                         android:layout_height="wrap_content"
                         android:layout_alignParentRight="true"
                         android:layout_centerVertical="true"
-                        android:layout_marginStart="@dimen/_10cdp"
-                        android:layout_marginTop="@dimen/_10cdp"
-                        android:layout_marginEnd="@dimen/_10cdp"
-                        android:layout_marginRight="10dp"
-                        android:layout_marginBottom="@dimen/_10cdp"
+                        android:layout_margin="@dimen/_10cdp"
                         android:src="@drawable/drawable_icon" />
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
-                        android:layout_marginLeft="20dp"
-                        android:layout_toLeftOf="@id/drawable_icon"
-                        android:src="@drawable/favorites_icon" />
 
 
                 </RelativeLayout>
@@ -153,11 +148,9 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:fillViewport="true"
-            android:paddingBottom="60dp"
             app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
             app:layout_constraintBottom_toTopOf="@id/bottom_nav"
             app:layout_constraintTop_toBottomOf="@id/toolbar">
-
 
             <TextView
                 android:layout_width="match_parent"
